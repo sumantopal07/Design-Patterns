@@ -1,0 +1,54 @@
+Observer Pattern: 
+        --> Main Idea: Push preferred over Poll
+        --> Defines One-to-Many dependencies between objects so that when one object changes state,
+            all of its dependencies notified and updated automatically
+
+example: 
+        ScreenShots
+    
+Solution: 
+        --> Publisher Subscriber Model.
+        --> Sutiable for scenarios like chatrooms, weather notification App
+        --> Observable Interface has one-to-many relationship with Observer Interfaces
+            The ConcreteObservable Class implements Observable and ConcreteObserver
+            implements Observer Interface.
+        --> Code from Head First Design Patterns
+
+        THE EXPLAINATION OF REFERENCE (HAS-A) PASSED TO CONCRETE OBSERVABLE:
+
+        The Idea is when we instantiate the ConcreteObserver, through the constructor
+        we pass ConcreteObservable (through the constructor we pass the thing we want to observe),
+        so it kind of go two-ways 
+
+Working Flow:
+        --> Instantiate the WeatherStation
+        --> Instantiate the Observers and pass the references of the Observables.
+        
+        WeatherStation station = new WeatherStation();
+        PhoneDisplay display = new PhoneDisplay(station);
+        // when it knows the state change it needs to somehow acces the new state.
+        station.add(device);
+        station.notify();
+
+        
+
+        
+
+
+References:
+        --> Head First Design Patterns
+        
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
