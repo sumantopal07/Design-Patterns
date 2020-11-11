@@ -1,0 +1,48 @@
+Decorator Pattern: 
+        --> Main Idea: (Do a Recursion)
+                --> If i want to change the thing to return, i can change it attaches           
+                        runtime rather than compile time.
+                --> Changing the behaviour of this thingh without changing 
+                        the code.
+                --> We wrap this object in other (wrapper)object.(Intermediate Layer)
+                --> Not Suitable if order of wrapping is important
+            
+        -->The Decorator Pattern attaches additional responsibilities to an object 
+           dynamically.Decorators provide a flexible alternative to subclassing 
+           for extending functionality.
+        --> The decorator adds its own behavior either before and/or after delegating to the object it
+            decorates to do the rest of the job.
+        
+        --> Decorator is a component and has another component as a reference.
+
+Why To Use: 
+        --> Solves Class Explosion(excessive sub-classes)
+        --> implementation of booleans in constructors is possible but it leads 
+            to issue of lots of conditionals in code which is difficult to maintain
+        --> Inextensble scenarios are resolved
+        --> Breaking Interface Aggregation Principle: Better to have multiple smaller interfaces rather 
+                                                      than one large interface. 
+
+example: 
+        ScreenShots        
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
+
+    Classes should be open
+    for extension, but closed for
+    modifi cation.
+
+    Conditionals returning provokes if-else 
+    condtions in your system.(*BAD THING)
