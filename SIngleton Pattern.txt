@@ -1,0 +1,72 @@
+Single Pattern: 
+        --> Main Idea: Same as Factory Method pattern but contructs multiple objects rather than
+                       singular object. 
+        --> The Singleton Pattern ensures a class has only one
+            instance, and provides a global point of access to it.
+
+
+When to Use:
+    --> There are many objects we only need one of: thread pools, caches, dialog boxes, objects that handle
+        preferences and registry settings, objects used for logging, and objects that act as device drivers to devices
+        like printers and graphics cards. In fact, for many of these types of objects, if we were to instantiate
+        more than one we’d run into all sorts of problems like incorrect program behavior, overuse of resources, or
+        inconsistent results.
+    --> the Singleton Pattern is a time-tested method for ensuring only one object gets created. The
+        Singleton Pattern also gives us a global point of access, just like a global variable, but without the downsides.    
+
+Issues:
+    --> In an multi-threaded environment, Race condtion may lead to creation of more than one instances of objects,
+        and synchronizing a method can decrease performance by a factor of 100.
+    --> Assuming we would never require more than 1 instances of class that might not be true.
+    --> Makes testing difficult. 
+
+
+Solution : 
+        public class Singleton {
+            
+            private volatile static Singleton uniqueInstance = new Singleton();
+            //https://www.geeksforgeeks.org/volatile-keyword-in-java/
+
+            private Singleton() {}
+            
+            public static Singleton getInstance() {
+            
+                if(uniqueInstance == null){
+                    if(uniqueInstance == null){
+                        uniqueInstance = new Singleton(); 
+                    }
+            
+                }
+            }
+        }
+
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
+
+    Classes should be open
+    for extension, but closed for
+    modifi cation.
+
+    Conditionals returning provokes if-else 
+    condtions in your system.(*BAD THING)
+
+    designs should closed for modificatiion
+    but open for extension.
+
+    identify the aspects that vary and 
+    separate them from what stays the same.
+
+    Depend upon abstractions. Do not
+    depend upon concrete classes.
