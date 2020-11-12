@@ -1,6 +1,4 @@
 Single Pattern: 
-        --> Main Idea: Same as Factory Method pattern but contructs multiple objects rather than
-                       singular object. 
         --> The Singleton Pattern ensures a class has only one
             instance, and provides a global point of access to it.
 
