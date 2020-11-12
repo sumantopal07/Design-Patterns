@@ -1,0 +1,52 @@
+Abstract Factory Pattern: 
+        --> Main Idea: Same as Factory Method pattern but contructs multiple objects rather than
+                       singular object. 
+        --> The Abstract Factory Pattern provides interface for creating families of related 
+            or dependent objects without specifying their concrete classes. 
+
+
+When to Use:
+        --> For example in a scenario where certain combination of objects are true together,
+            some are not. (as explained in the video of example XY MN IY).
+        --> Scenarios:
+            --> Button-Dialogue Box example:
+                2 buttons object sutable in some device, 3 buttons + text suitable for other device
+            --> Dark/Light Theme UI.
+            
+
+
+Code:
+        https://youtu.be/xbjAsdAK4xQ
+
+
+
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
+
+    Classes should be open
+    for extension, but closed for
+    modifi cation.
+
+    Conditionals returning provokes if-else 
+    condtions in your system.(*BAD THING)
+
+    designs should closed for modificatiion
+    but open for extension.
+
+    identify the aspects that vary and 
+    separate them from what stays the same.
+
+    Depend upon abstractions. Do not
+    depend upon concrete classes.
