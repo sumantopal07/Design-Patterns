@@ -15,10 +15,7 @@ When to Use:
         --> To centralise class selection code
         --> Want to encapsulate object creation
 
-Code:
-        https://youtu.be/ub0DXaeV6hA
-
-Bonus:
+Code:   
         https://youtu.be/bZ2OHWf7Yb0
 
 
