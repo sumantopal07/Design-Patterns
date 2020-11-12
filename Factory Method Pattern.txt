@@ -1,0 +1,52 @@
+Factory Method Pattern: 
+        --> Main Idea: separating the code for intantiation to separate class
+                       because instatiation might be commplicated in terms of code 
+                       written or when we don't know which subclass we are going to instantiate
+                       (the animal subclass example which will lead to lots of if-else conditionals)
+
+                       *So we are encapsulating the logic of instantiation.
+
+        --> The Factory Method pattern Defines an Interface for creating an object, but lets subclasses
+            decide which class to instantiate. The Factory Method lets the class defer instatiation 
+            to subclasses.
+
+When to Use:
+        --> When you don't knnow ahead of time what class object you need
+        --> To centralise class selection code
+        --> Want to encapsulate object creation
+
+Code:
+        https://youtu.be/ub0DXaeV6hA
+
+Bonus:
+        https://youtu.be/bZ2OHWf7Yb0
+
+
+
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
+
+    Classes should be open
+    for extension, but closed for
+    modifi cation.
+
+    Conditionals returning provokes if-else 
+    condtions in your system.(*BAD THING)
+
+    designs should closed for modificatiion
+    but open for extension.
+
+    identify the aspects that vary and 
+    separate them from what stays the same.
