@@ -1,0 +1,44 @@
+Adapter Pattern: 
+        --> Main Idea:
+                --> Making 2 Interfaces compatible that aren't compatible.
+                --> Intention is not to change the internal behaviour 
+                --> Call a thing that calls the thing
+
+        --> The Adapter Pattern converts the interface of a class
+            into another interface the clients expect. Adapter lets
+            classes work together that couldn’t otherwise because of
+            incompatible interfaces.
+
+        --> Change order of Arguments while invocation ( NodeJs example)
+
+        
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
+
+    Classes should be open
+    for extension, but closed for
+    modifi cation.
+
+    Conditionals returning provokes if-else 
+    condtions in your system.(*BAD THING)
+
+    designs should closed for modificatiion
+    but open for extension.
+
+    identify the aspects that vary and 
+    separate them from what stays the same.
+
+    Depend upon abstractions. Do not
+    depend upon concrete classes.
