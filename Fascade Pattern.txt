@@ -1,0 +1,44 @@
+Fascade Pattern: 
+        --> Main Idea: Simplifies interface that performs many other actions behind the scenes.
+
+        --> The Facade Pattern provides a unified interface to a
+            set of interfaces in a subsytem. Facade defines a higher-
+            level interface that makes the subsystem easier to use.
+
+Code:
+    http://www.newthinktank.com/2012/09/facade-design-pattern-tutorial/
+
+Design Principle
+
+    Identify the aspects of your
+    application that vary and separate
+    them from what stays the same. 
+
+    Program to an interface, not an
+    implementation
+
+    Favor composition over inheritance.
+
+    Strive for loosely coupled designs
+    between objects that interact.
+
+    Classes should be open
+    for extension, but closed for
+    modification.
+
+    Conditionals returning provokes if-else 
+    condtions in your system.(*BAD THING)
+
+    designs should closed for modificatiion
+    but open for extension.
+
+    identify the aspects that vary and 
+    separate them from what stays the same.
+
+    Depend upon abstractions. Do not
+    depend upon concrete classes.
+
+    Principle of Least Knowledge -
+    talk only to your immediate friends.
+    
+    Lower Coupling and High Cohesion
